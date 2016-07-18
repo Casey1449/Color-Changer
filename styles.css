@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  height: 120px;
+  width: 260px;
+  background: #e5b6d5;
+  border: 11px solid #b2479a;
+  border-right: 11px solid #cc7fb5;
+  border-left: 11px solid #cc7fb5;
+  margin: 20px;
+}
+
+button:hover {
+  background: #b2479a;
+  border: 11px solid #cc7fb5;
+  border-right: 11px solid #e5b6d5;
+  border-left: 11px solid #e5b6d5;
+}

@@ -8,14 +8,20 @@ function getRandomNum(min, max){
 
 function getRandomRGB(){
   var color = 'rgb(' + getRandomNum(1, 255) + ', ' + getRandomNum(1, 255) + ', ' + getRandomNum(1, 255) + ')';
-  if (color === 'rgb(255, 255, 255)'){getRandomRGB();};
+  if (color === 'rgb(255, 255, 255)'){
+    return getRandomRGB();
+  };
   return color;
 };
 
+function changeBackgroundColor(color){
+  return body.style.backgroundColor = color;
+}
+
 randomButton.addEventListener('click', function(){
-  body.style.backgroundColor = getRandomRGB();
+  changeBackgroundColor(getRandomRGB());
 });
 
 resetButton.addEventListener('click', function(){
-  body.style.backgroundColor = 'white';
+  changeBackgroundColor('white');
 })

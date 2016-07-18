@@ -1,23 +1,24 @@
 body {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
 button {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #fff;
-  height: 120px;
-  width: 260px;
   background: #e5b6d5;
   border: 11px solid #b2479a;
   border-right: 11px solid #cc7fb5;
   border-left: 11px solid #cc7fb5;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  height: 120px;
+  letter-spacing: 4px;
   margin: 20px;
+  text-transform: uppercase;
+  width: 260px;
 }
 
 button:hover {
@@ -25,4 +26,16 @@ button:hover {
   border: 11px solid #cc7fb5;
   border-right: 11px solid #e5b6d5;
   border-left: 11px solid #e5b6d5;
+}
+
+@media (max-width: 620px) {
+  button {
+    display: block;
+  }
+
+  .reset-button {
+    font-size: 1.5em;
+    height: 60px;
+    margin-top: 60px;
+  }
 }
